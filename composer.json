@@ -1,6 +1,6 @@
 {
     "name":        "simon-downes/spf-contracts",
-    "description": "SPF's interface library",
+    "description": "Defines the interfaces and traits for the services used throughout SPF",
     "keywords":    ["framework", "php", "spf"],
     "license":     "MIT",
     "authors": [
