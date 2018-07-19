@@ -18,7 +18,6 @@ trait ProfilerAwareTrait {
     /**
      * Inject a profiler object.
      *
-     * @param   Profiler   $profiler
      * @return  self
      */
     public function setProfiler( Profiler $profiler = null ) {

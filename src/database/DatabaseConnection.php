@@ -7,8 +7,6 @@ namespace spf\contracts\support\database;
 
 use PDO, PDOStatement;
 
-use spf\contracts\database\{SelectQuery, InsertQuery, UpdateQuery, DeleteQuery};
-
 interface DatabaseConnection {
 
     /**

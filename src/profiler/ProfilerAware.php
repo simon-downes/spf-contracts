@@ -12,8 +12,6 @@ interface ProfilerAware {
 
     /**
      * Inject a profiler object.
-     *
-     * @param   Profiler   $profiler
      */
     public function setProfiler( Profiler $profiler = null );
 

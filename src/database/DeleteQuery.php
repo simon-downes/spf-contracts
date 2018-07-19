@@ -5,7 +5,7 @@
  */
 namespace spf\contracts\support\database;
 
-interface Query {
+interface DeleteQuery {
 
     public function from( string $table ): SelectQuery;
 

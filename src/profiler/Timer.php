@@ -12,10 +12,9 @@ interface Timer {
 
     /**
      * Start the timer.
-     * @param  float $time optional starting point (microtime)
      * @return self
      */
-    public function start( $time = null ): Timer;
+    public function start( float $time = null ): Timer;
 
     /**
      * Stop the timer and add the duration to the total elapsed time.
@@ -31,7 +30,7 @@ interface Timer {
     /**
      * Return the elapsed time from last start.
      */
-    public function getElapsed( $total = false ): float;
+    public function getElapsed( bool $total = false ): float;
 
     /**
      * Return the total elapsed time.
