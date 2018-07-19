@@ -7,9 +7,9 @@ namespace spf\contracts\support;
 
 interface Arrayable {
 
-	/**
-	 * Return an array representation of the object.
-	 */
-	public function toArray(): array;
+    /**
+     * Return an array representation of the object.
+     */
+    public function toArray(): array;
 
 }

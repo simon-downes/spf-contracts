@@ -7,10 +7,10 @@ namespace spf\contracts\support\database;
 
 interface UpdateQuery extends Query {
 
-	public function table( string $table ): UpdateQuery;
+    public function table( string $table ): UpdateQuery;
 
-	public function set( array $data, bool $replace = false ): UpdateQuery;
+    public function set( array $data, bool $replace = false ): UpdateQuery;
 
-	public function execute(): int;
+    public function execute(): int;
 
 }

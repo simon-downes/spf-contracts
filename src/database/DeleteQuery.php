@@ -7,8 +7,8 @@ namespace spf\contracts\support\database;
 
 interface Query {
 
-	public function from( string $table ): SelectQuery;
+    public function from( string $table ): SelectQuery;
 
-	public function execute(): int;
+    public function execute(): int;
 
 }

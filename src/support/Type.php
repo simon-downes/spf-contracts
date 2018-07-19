@@ -10,38 +10,38 @@ namespace spf\contracts\support;
  * e.g. datatypes of form fields or model properties
  */
 class Type {
-	
-	// numeric types
-	const INTEGER    = 'integer';
-	const FLOAT      = 'float';
-	const BOOLEAN    = 'boolean';
+    
+    // numeric types
+    const INTEGER    = 'integer';
+    const FLOAT      = 'float';
+    const BOOLEAN    = 'boolean';
 
-	// temporal types
-	const TIMESTAMP  = 'timestamp';
-	const DATETIME   = 'datetime';
-	const DATE       = 'date';
-	const TIME       = 'time';
-	const YEAR       = 'year';
+    // temporal types
+    const TIMESTAMP  = 'timestamp';
+    const DATETIME   = 'datetime';
+    const DATE       = 'date';
+    const TIME       = 'time';
+    const YEAR       = 'year';
 
-	// text types
-	const TEXT       = 'text';
-	const SLUG       = 'slug';
-	const IP         = 'ip';
-	const EMAIL      = 'email';
-	const URL        = 'url';
+    // text types
+    const TEXT       = 'text';
+    const SLUG       = 'slug';
+    const IP         = 'ip';
+    const EMAIL      = 'email';
+    const URL        = 'url';
 
-	// binary types
-	const BINARY     = 'binary';
+    // binary types
+    const BINARY     = 'binary';
 
-	// miscellaneous types
-	const ENUM       = 'enum';
-	const SET        = 'set';
-	const JSON       = 'json';
-	const CUSTOM     = 'custom';
-	const OBJECT     = 'object';
-	const ENTITY     = 'entity';
-	const COLLECTION = 'collection';
+    // miscellaneous types
+    const ENUM       = 'enum';
+    const SET        = 'set';
+    const JSON       = 'json';
+    const CUSTOM     = 'custom';
+    const OBJECT     = 'object';
+    const ENTITY     = 'entity';
+    const COLLECTION = 'collection';
 
-	private function __construct() {}
+    private function __construct() {}
 
 }

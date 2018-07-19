@@ -10,32 +10,32 @@ namespace spf\contracts\support\profiler;
  */
 interface Timer {
 
-	/**
-	 * Start the timer.
-	 * @param  float $time optional starting point (microtime)
-	 * @return self
-	 */
-	public function start( $time = null ): Timer;
+    /**
+     * Start the timer.
+     * @param  float $time optional starting point (microtime)
+     * @return self
+     */
+    public function start( $time = null ): Timer;
 
-	/**
-	 * Stop the timer and add the duration to the total elapsed time.
-	 * @return self
-	 */
-	public function stop(): Timer;
+    /**
+     * Stop the timer and add the duration to the total elapsed time.
+     * @return self
+     */
+    public function stop(): Timer;
 
-	/**
-	 * Determine if the timer is currently running.
-	 */
-	public function isRunning(): bool;
+    /**
+     * Determine if the timer is currently running.
+     */
+    public function isRunning(): bool;
 
-	/**
-	 * Return the elapsed time from last start.
-	 */
-	public function getElapsed( $total = false ): float;
+    /**
+     * Return the elapsed time from last start.
+     */
+    public function getElapsed( $total = false ): float;
 
-	/**
-	 * Return the total elapsed time.
-	 */
-	public function getTotalElapsed(): float;
+    /**
+     * Return the total elapsed time.
+     */
+    public function getTotalElapsed(): float;
 
 }

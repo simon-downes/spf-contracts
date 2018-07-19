@@ -7,9 +7,9 @@ namespace spf\contracts\support;
 
 interface Dumpable {
 
-	/**
-	 * Return a string containing a debug representation of the object.
-	 */
-	public function dump( Dumper $dumper ): string;
+    /**
+     * Return a string containing a debug representation of the object.
+     */
+    public function dump( Dumper $dumper ): string;
 
 }

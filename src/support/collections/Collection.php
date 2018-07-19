@@ -16,21 +16,21 @@ use spf\contracts\support\Arrayable;
  */
 interface Collection extends Arrayable, Countable, Traversable {
 
-	/**
-	 * Determines if the collection is empty.
-	 */
-	public function isEmpty(): bool;
+    /**
+     * Determines if the collection is empty.
+     */
+    public function isEmpty(): bool;
 
-	/**
-	 * Remove all the items from the collection.
-	 * @return self
-	 */
-	public function clear(): Collection;
+    /**
+     * Remove all the items from the collection.
+     * @return self
+     */
+    public function clear(): Collection;
 
-	/**
-	 * Determines if the specified item is in the collection.
-	 * @param  mixed $item
-	 */
-	public function contains( $item ): bool;
+    /**
+     * Determines if the specified item is in the collection.
+     * @param  mixed $item
+     */
+    public function contains( $item ): bool;
 
 }

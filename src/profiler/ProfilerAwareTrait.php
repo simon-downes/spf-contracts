@@ -10,20 +10,20 @@ namespace spf\contracts\support\profiler;
  */
 trait ProfilerAwareTrait {
 
-	/**
-	 * Profiler instance.
-	 * @var Profiler	 */
-	protected $profiler;
-	
-	/**
-	 * Inject a profiler object.
-	 *
-	 * @param   Profiler   $profiler
-	 * @return  self
-	 */
-	public function setProfiler( Profiler $profiler = null ) {
-		$this->profiler = $profiler;
-		return $this;
-	}
+    /**
+     * Profiler instance.
+     * @var Profiler     */
+    protected $profiler;
+    
+    /**
+     * Inject a profiler object.
+     *
+     * @param   Profiler   $profiler
+     * @return  self
+     */
+    public function setProfiler( Profiler $profiler = null ) {
+        $this->profiler = $profiler;
+        return $this;
+    }
 
 }

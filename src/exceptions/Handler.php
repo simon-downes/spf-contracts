@@ -9,9 +9,9 @@ use Throwable;
 
 interface Handler {
 
-	/**
-	 * Handle a throwable error or exception.
-	 */
-	public function handle( Throwable $e );
+    /**
+     * Handle a throwable error or exception.
+     */
+    public function handle( Throwable $e );
 
 }

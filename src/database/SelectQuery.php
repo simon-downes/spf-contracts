@@ -7,14 +7,14 @@ namespace spf\contracts\support\database;
 
 interface SelectQuery extends Query {
 
-	public function cols( array $columns ): SelectQuery;
+    public function cols( array $columns ): SelectQuery;
 
-	public function distinct( bool $distinct = true ): SelectQuery;
+    public function distinct( bool $distinct = true ): SelectQuery;
 
-	public function from( string $table ): SelectQuery;
+    public function from( string $table ): SelectQuery;
 
-	public function groupBy( array $columns ): SelectQuery;
+    public function groupBy( array $columns ): SelectQuery;
 
-	public function having( string $having ): SelectQuery;
+    public function having( string $having ): SelectQuery;
 
 }

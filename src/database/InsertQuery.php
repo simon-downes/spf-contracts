@@ -7,14 +7,14 @@ namespace spf\contracts\support\database;
 
 interface InsertQuery extends Query {
 
-	public function ignore( bool $ignore = true ): InsertQuery;
+    public function ignore( bool $ignore = true ): InsertQuery;
 
-	public function into( string $table ): InsertQuery;
+    public function into( string $table ): InsertQuery;
 
-	public function cols( array $columns ): InsertQuery;
+    public function cols( array $columns ): InsertQuery;
 
-	public function item( array $item ): InsertQuery;
+    public function item( array $item ): InsertQuery;
 
-	public function execute( bool $return_insert_id = true );
+    public function execute( bool $return_insert_id = true );
 
 }

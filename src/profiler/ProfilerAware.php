@@ -10,11 +10,11 @@ namespace spf\contracts\support\profiler;
  */
 interface ProfilerAware {
 
-	/**
-	 * Inject a profiler object.
-	 *
-	 * @param   Profiler   $profiler
-	 */
-	public function setProfiler( Profiler $profiler = null );
+    /**
+     * Inject a profiler object.
+     *
+     * @param   Profiler   $profiler
+     */
+    public function setProfiler( Profiler $profiler = null );
 
 }

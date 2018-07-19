@@ -10,18 +10,18 @@ namespace spf\contracts\support\collections;
  */
 interface Set extends Collection {
 
-	/**
-	 * Add a new item to the set.
-	 * @param mixed $item
-	 * @return boolean   true if item was added to the set, false if it already exists
-	 */
-	public function add( $item );
+    /**
+     * Add a new item to the set.
+     * @param mixed $item
+     * @return boolean   true if item was added to the set, false if it already exists
+     */
+    public function add( $item );
 
-	/**
-	 * Remove the specified item from the set.
-	 * @param  mixed $item
-	 * @return boolean   true if the item existed in the set.
-	 */
-	public function remove( $item );
+    /**
+     * Remove the specified item from the set.
+     * @param  mixed $item
+     * @return boolean   true if the item existed in the set.
+     */
+    public function remove( $item );
 
 }

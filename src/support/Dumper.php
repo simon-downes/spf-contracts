@@ -7,9 +7,9 @@ namespace spf\contracts\support;
 
 interface Dumper {
 
-	/**
-	 * Return a string containing a debug representation of a variable.
-	 */
-	public function dump( $var ): string;
+    /**
+     * Return a string containing a debug representation of a variable.
+     */
+    public function dump( $var ): string;
 
 }

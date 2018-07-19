@@ -7,18 +7,18 @@ namespace spf\contracts\support\database;
 
 interface Query {
 
-	public function innerJoin( string $table, array $on ): Query;
+    public function innerJoin( string $table, array $on ): Query;
 
-	public function leftJoin( string $table, array $on ): Query;
+    public function leftJoin( string $table, array $on ): Query;
 
-	public function where( string $column, string $operator, $value = null ): Query;
+    public function where( string $column, string $operator, $value = null ): Query;
 
-	public function orderBy( string $column, bool $ascending = true ): Query;
+    public function orderBy( string $column, bool $ascending = true ): Query;
 
-	public function offset( int $offset ): Query;
+    public function offset( int $offset ): Query;
 
-	public function limit( int $limit ): Query;
+    public function limit( int $limit ): Query;
 
-	public function __toString(): string;
+    public function __toString(): string;
 
 }
