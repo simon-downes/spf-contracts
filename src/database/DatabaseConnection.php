@@ -3,7 +3,7 @@
  * This file is part of the spf-contracts package which is distributed under the MIT License.
  * See LICENSE.md or go to https://github.com/simon-downes/spf-contracts for full license details.
  */
-namespace spf\contracts\support\database;
+namespace spf\contract\database;
 
 use PDO, PDOStatement;
 
@@ -136,7 +136,7 @@ interface DatabaseConnection {
      * If a sequence name was not specified for the name parameter, returns a string representing the row ID of the last row that was inserted into the database.
      * If a sequence name was specified for the name parameter, returns a string representing the last value retrieved from the specified sequence object. 
      */
-    public function insertId( $name = '' ): string;
+    public function insertId( string $name = '' ): string;
 
     /**
      * Quote a value so it can be embedded in a query.
