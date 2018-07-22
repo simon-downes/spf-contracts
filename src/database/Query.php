@@ -11,7 +11,7 @@ interface Query {
 
     public function leftJoin( string $table, array $on ): Query;
 
-    public function where( string $column, string $operator, $value = null ): Query;
+    public function where( string $column, $operator, $value = null ): Query;
 
     public function orderBy( string $column, bool $ascending = true ): Query;
 

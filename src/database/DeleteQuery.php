@@ -7,7 +7,7 @@ namespace spf\contracts\database;
 
 interface DeleteQuery {
 
-    public function from( string $table ): SelectQuery;
+    public function from( string $table ): DeleteQuery;
 
     public function execute(): int;
 
