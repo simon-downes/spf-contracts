@@ -22,6 +22,6 @@ interface Set extends Collection {
      * @param  mixed $item
      * @return boolean   true if the item existed in the set.
      */
-    public function remove( $item );
+    public function remove( $item ): bool;
 
 }
