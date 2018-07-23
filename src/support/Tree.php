@@ -9,28 +9,28 @@ interface Tree {
 
     public function countAncestors( $id ): int;
     
-    public function getAncestors( $id );
+    public function getAncestors( $id ): array;
     
     public function countSiblings( $id ): int;
     
-    public function getSiblings( $id );
+    public function getSiblings( $id ): array;
     
     public function countChildren( $id ): int;
     
-    public function getChildren( $id );
+    public function getChildren( $id ): array;
     
     public function countDescendants( $id ): int;
     
-    public function getDescendants( $id, bool $absolute_depth = false );
+    public function getDescendants( $id, bool $absolute_depth = false ): array;
     
-    public function insertNode( $id, $parent_id = 0 );
+    public function insertNode( $id, $parent_id = 0 ): Tree;
     
-    public function removeNode( $id );
+    public function removeNode( $id ): Tree;
     
-    public function moveNode( $id, $parent_id );
+    public function moveNode( $id, $parent_id ): Tree;
     
-    public function getTree( $id, int $max_depth = 0, bool $sort = false );
+    public function getTree( $id, int $max_depth = 0, bool $sort = false ): array;
     
-    public function rebuild( bool $sort = false );
+    public function rebuild( bool $sort = false ): Tree;
 
 }
