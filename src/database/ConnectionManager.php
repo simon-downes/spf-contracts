@@ -43,6 +43,6 @@ interface ConnectionManager {
      * Specify the default connection.
      * @param string $name name of the connection.
      */
-    public function setDefault( string $name ): void;
+    public function setDefault( string $name ): ConnectionManager;
 
 }
